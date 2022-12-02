@@ -16,7 +16,7 @@ const FileDownload = (props) => {
     const [{ data, loading, error }, refetch] = useAxios(
         {
           method: 'post',
-          url: 'https://3001-patia2-newswhether-jmrskdztjdx.ws-eu77.gitpod.io/merger',
+          url: 'https://dead-ruby-viper-gear.cyclic.app/merger',
           data: formdata,
           responseType: 'blob',
         }
