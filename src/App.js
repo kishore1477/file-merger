@@ -14,7 +14,7 @@ function App() {
 <Router basename='/merger-frontend'>
 <Navbar/>
 <Routes>
-<Route exact path='/' element={<MergePDF/>} />
+<Route exact path='/merger-frontend' element={<MergePDF/>} />
 <Route exact path='/mergDox' element={<MergeDox/>} />
 <Route exact path='/mergImg' element={<MergeImg/>} />
 
