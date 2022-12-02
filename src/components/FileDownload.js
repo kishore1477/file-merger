@@ -22,8 +22,8 @@ const FileDownload = (props) => {
         }
       )
       refetch
-      if (loading) return <p>Loading...</p>
-    if (error) return <p>Error!</p>
+      if (loading) return; <p>Loading...</p>
+    if (error) return; <p>Error!</p>
     console.log("my data is",data)
 
     const downloadFile =()=>{
