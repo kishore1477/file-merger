@@ -14,7 +14,7 @@ function App() {
 <Router>
 <Navbar/>
 <Routes>
-<Route exact path='/' element={<MergePDF/>} />
+<Route exact path='/merg' element={<MergePDF/>} />
 <Route exact path='/mergDox' element={<MergeDox/>} />
 <Route exact path='/mergImg' element={<MergeImg/>} />
 
