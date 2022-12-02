@@ -11,10 +11,10 @@ function App() {
   
     <div className="App">
 
-<Router basename='/merger-frontend'>
+<Router basename='/merger-frontend/'>
 <Navbar/>
 <Routes>
-<Route exact path='/merger-frontend' element={<MergePDF/>} />
+<Route exact path='/' element={<MergePDF/>} />
 <Route exact path='/mergDox' element={<MergeDox/>} />
 <Route exact path='/mergImg' element={<MergeImg/>} />
 
