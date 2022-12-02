@@ -4,9 +4,10 @@ import useAxios from 'axios-hooks'
 import FormData from 'form-data'
 
 const FileDownload = (props) => {
-    const {fileData, name, setcond} = props
-    console.log("my name is",name)
-    console.log("my fileData is",fileData)
+    const {fileData, setcond} = props
+   
+    // console.log("my name is",name)
+    // console.log("my fileData is",fileData)
 
     const formdata =  new FormData()
     console.log("file is:" , fileData)
@@ -21,9 +22,9 @@ const FileDownload = (props) => {
           responseType: 'blob',
         }
       )
-      refetch
-      if (loading) return; <p>Loading...</p>
-    if (error) return; <p>Error!</p>
+      refetch()
+      if (loading) return ( <p>Loading...</p>)
+    if (error) return ( <p>Error!</p>)
     console.log("my data is",data)
 
     const downloadFile =()=>{
